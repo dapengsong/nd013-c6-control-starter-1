@@ -17,19 +17,28 @@ public:
     /*
     * Errors
     */
-
+    double p_error;
+    double i_error;
+    double d_error;
     /*
     * Coefficients
     */
-
+     double Kpi;
+     double Kii; 
+     double Kdi; 
+     double output_lim_maxi;
+     double output_lim_mini;
     /*
     * Output limits
     */
-  
+    double velocity_limit_min = -1;
+    double velocity_limit_max = 1;
+    double rotation_limit_min = -1.2;
+    double rotation_limit_max = 1.2;
     /*
     * Delta time
     */
-
+    double dt;
     /*
     * Constructor
     */
